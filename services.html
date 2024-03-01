@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>Services | Indiesign</title>
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+        /* Utilize on all pages */ html{
+            font-family: georgia;
+            background: radial-gradient(aquamarine, aqua, aqua, lightgray, aliceblue, white);
+            background-repeat:repeat-y;
+            width: 100%;
+            height: 1%;
+            }
+
+            .rest{
+            margin: 2%;
+
+        }
+        .rest header{
+            width: 15%;
+            height: 15%;
+
+        }
+        .rest header img{
+            
+            border: 3px solid teal;
+            width: 80%;
+            right: 0;
+            left: 0;
+        }
+        .rest header h1{
+            color: indigo;
+        }
+        .rest .subheader h5{
+            background-color: rgba(240,248,255, 0.8);
+
+            border-color: rgba(240,248,255, 0.5);
+            border-style: solid groove;
+
+            width: 15%;
+            height: 15%;;
+            padding: 2%;
+            text-align: center;
+            color: indigo;
+            float: left;
+
+        }
+
+
+            /* Navbar */
+
+        .rest .navbar{
+            width: 50%;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+        }
+        .rest .navbar .item{
+            width: 25%;
+            float: right;
+            text-align: center;
+            background-color: silver;
+            color: black;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .rest .navbar .item:hover{
+            background-color: beige;
+            display: inline-block;
+        }
+
+        .rest .navbar .dropdown{
+            width: 25%;
+            float: right;
+            text-align: center;
+        }
+        .rest .navbar .dropdown .item{
+            background-color: silver;
+            color: black;
+            display: inline-block;
+            width: 100%;
+            
+        }
+        .rest .navbar .dropdown .item:hover{
+            background-color: beige;
+        }
+        
+
+        .rest .navbar .dropdown .subitem{
+            visibility: hidden;
+        }
+
+        .rest .navbar .dropdown:hover .subitem{
+            text-align: center;
+            background-color: lightcyan;
+            color: black;
+            display: inline-block;
+            visibility: visible;
+            width: 100%;
+            height: 100%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        .rest .navbar .dropdown:hover .subitem:hover{
+            background-color: beige;
+        }
+
+        .clear{
+            clear: both;
+        }
+
+        .rest .body{
+            width: 50%;
+            background-color: rgba(240,248,255, 0.9);
+            border: aliceblue 3px solid;
+            float: right;
+            padding-right: 3%;
+            padding-left: 3%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin-right: 20%;
+            margin-top: 0.25%;
+        }
+
+      footer{
+            text-align: center;
+            margin: 0 auto;
+            padding: 0.5%;
+            width: 30%;
+            background-color: silver;
+            color: indigo;
+        }
+        
+
+        /* Page Specific */
+        
+
+        
+        
+        
+
+
+    </style>
+    
+    
+</head>
+
+<div class="rest" id="rest">
+
+    <div class="navbar" id="navbar">
+        <span class="dropdown">
+            <span class="item"><h4>Contact</h4></span>
+            <div class="clear"></div>
+            <span class="subitem"><h4>Contact Information</h4></span>
+            <span class="subitem"><h4>Indie's Resume</h4></span>
+        </span>
+        
+        <a class="item" href="about.html"><h4>About</h4></span></a>
+        <a class="item" href="services.html"><h4>Services</h4></span></a>
+        <a class="item" href="index.html"><h4>Home</h4></span></a>
+        
+    </div>
+
+    <header class="h1" id="h1">
+        <a href="index.html"><img src="images/favicon.ico"></a>
+    </header>
+    <div class="subheader" id="subheader">
+        <h5>Website Building &#8226 Graphic Design &#8226 Hosting Options &#8226 Photography</h5>
+    </div>
+
+    <span class="body">
+        <div class="main" id="main">
+            <img src="images/main.jpg">
+            <figcaption>Runyon Canyon, Los Angeles, CA, USA | Taken by Indie</figcaption>
+        </div>
+    </span>
+    <div class="clear"></div>
+    <br>
+    <br>
+    <footer>
+        <script>document.write("Indiesign.org   ", new Date().getFullYear(), " | Launched 2/29/2024")</script>
+    </footer>
+
+
+
+
+</div>
+
+<script type="text/javascript"> 
+    window.onload = fadeIn;
+
+      
+    function fadeIn() {
+        var fade = document.getElementById("rest"); 
+        var opacity = 0; 
+        var intervalID = setInterval(function() { 
+      
+            if (opacity < 1) { 
+                opacity = opacity + 0.2
+                fade.style.opacity = opacity; 
+            } else { 
+                clearInterval(intervalID); 
+            } 
+        }, 200); 
+    }
+
+    
+    </script>
+
+
+</html>
