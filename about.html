@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Home | Indiesign</title>
-    <link rel="icon" href="images/favicon.ico">
-    <style>
-        /* Utilize on all pages */ html{
+    <head>
+        <title>About | Indiesign</title>
+        <link rel="icon" href="images/favicon.ico">
+        
+        <style>
+            html{
             font-family: georgia;
             background: radial-gradient(aquamarine,aqua, lightgray, aliceblue, white);
             background-repeat:repeat-y;
@@ -26,8 +26,7 @@
             
             border: 3px solid teal;
             width: 80%;
-            right: 0;
-            left: 0;
+            margin: 0 auto;
         }
         .rest header h1{
             color: indigo;
@@ -111,6 +110,10 @@
             clear: both;
         }
 
+
+
+        /*Page Specific*/
+
         .rest .body{
             width: 50%;
             background-color: rgba(240,248,255, 0.9);
@@ -123,94 +126,91 @@
             margin-right: 20%;
             margin-top: 0.25%;
         }
-
-        
-
-        /* Page Specific */
-        
-
-        .rest .main{
-            width: 75%;
-            height: auto;
-            margin: 0 auto;
-        }
-        .rest .main img{
-            width: 100%;
-            margin: 2%;
-        }
-        .rest .main img:hover figcaption {
-            opacity: 1;
-            left: 0;
-        }
-        figcaption{
+        .rest .body .pagetitle{
             text-align: center;
-            background: rgba(0,0,0,0.75); 
-            color: white; 
-            margin: 0 auto;
         }
-        
-        
+        .rest .body img{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        </style>
+    </head>
 
 
-    </style>
-    
-    
-</head>
+    <div class="rest" id="rest">
 
-<div class="rest" id="rest">
-
-    <div class="navbar" id="navbar">
-        <span class="dropdown">
-            <span class="item"><h4>Contact</h4></span>
-            <div class="clear"></div>
-            <span class="subitem"><h4>Contact Information</h4></span>
-            <span class="subitem"><h4>Indie's Resume</h4></span>
-        </span>
-        
-        <a class="item" href="about.html"><h4>About</h4></span></a>
-        <a class="item" href="services.html"><h4>Services</h4></span></a>
-        <a class="item" href="index.html"><h4>Home</h4></span></a>
-        
-    </div>
-
-    <header class="h1" id="h1">
-        <a href="index.html"><img src="images/favicon.ico"></a>
-    </header>
-    <div class="subheader" id="subheader">
-        <h5>Website Building &#8226 Graphic Design &#8226 Hosting Options &#8226 Photography</h5>
-    </div>
-
-    <span class="body">
-        <div class="main" id="main">
-            <img src="images/main.jpg">
-            <figcaption>Runyon Canyon, Los Angeles, CA, USA | Taken by Indie</figcaption>
+        <div class="navbar" id="navbar">
+            <span class="dropdown">
+                <span class="item"><h4>Contact</h4></span>
+                <div class="clear"></div>
+                <span class="subitem"><h4>Contact Information</h4></span>
+                <span class="subitem"><h4>Indie's Resume</h4></span>
+            </span>
+            
+            <a class="item" href="about.html"><h4>About</h4></span></a>
+            <a class="item" href="services.html"><h4>Services</h4></span></a>
+            <a class="item" href="index.html"><h4>Home</h4></span></a>
+            
         </div>
-    </span>
-
-
-
-
-</div>
-
-<script type="text/javascript"> 
-    window.onload = fadeIn;
-
-      
-    function fadeIn() {
-        var fade = document.getElementById("rest"); 
-        var opacity = 0; 
-        var intervalID = setInterval(function() { 
-      
-            if (opacity < 1) { 
-                opacity = opacity + 0.2
-                fade.style.opacity = opacity; 
-            } else { 
-                clearInterval(intervalID); 
-            } 
-        }, 200); 
-    }
-
     
-    </script>
+        <header class="h1" id="h1">
+            <a href="index.html"><img src="images/favicon.ico"></a>
+        </header>
+        <div class="subheader" id="subheader">
+            <h5>Website Building &#8226 Graphic Design &#8226 Hosting Options &#8226 Photography</h5>
+        </div>
+        <span class="body">
+            <h1 class="pagetitle">About</h1>
+            <div class="clear"></div>
+            <img src="images/indie1.JPG">
+            <div class="clear"></div>
 
+            <h2>Indie</h2>
+            <p>
+                Indie is Indiesign's founder and current main constituent. Indie has been designing websites since he was a kid
+                using website building services such as WordPress and Weebly. However, as he grew older he expanded into
+                developing websites utilizing pure Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), and JavaScript.
+                He is also well-versed in Python and C++ languages.
+                <br>
+                <br>
+                Indie really enjoys applying mathematics when he is developing webites. One of his favorite uses is
+                utilizing and embedding linear algebra for experience personalization features.
+                <br>
+                <br>
+                He has also always had an affinity for photography— some of his photos are utilized here on this very website.
+                <br>
+                <br>
+                Indie is able to communicate effectively in English, Español, Deutsch, Portugês and Français.
+                So don't be afraid to reach out if you are non-english speaking.
+            </p>
+
+            <div class="clear"></div>
+            <br><br>
+            <img src="images/indiepfp.jpg">
+        </span>
+    </div>
+
+
+    <script type="text/javascript"> 
+        window.onload = fadeIn;
+    
+          
+        function fadeIn() {
+            var fade = document.getElementById("rest"); 
+            var opacity = 0; 
+            var intervalID = setInterval(function() { 
+          
+                if (opacity < 1) { 
+                    opacity = opacity + 0.2
+                    fade.style.opacity = opacity; 
+                } else { 
+                    clearInterval(intervalID); 
+                } 
+            }, 200); 
+        }
+    
+        
+        </script>
 </html>
