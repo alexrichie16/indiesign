@@ -112,37 +112,28 @@
         }
 
         .rest .body{
-            width: 50%;
+            width: 100%;
+        }
+
+        
+
+        /* Page Specific */
+
+        .rest .body .main{
             background-color: rgba(240,248,255, 0.9);
             border: aliceblue 3px solid;
             padding-right: 3%;
             padding-left: 3%;
             padding-top: 1%;
             padding-bottom: 1%;
-            margin: 3%;
-            float: left;
+            width: 55%;
+            margin-right: 2%;
+            float: right;
         }
-
         
 
-        /* Page Specific */
-        
-
-        .rest .main{
-            width: 75%;
-            height: auto;
-            margin: 0 auto;
-        }
-        .rest .main .title{
+        .rest .body .main .title{
             text-align: center;
-        }
-        .rest .main img{
-            width: 100%;
-            margin: 2%;
-        }
-        .rest .main img:hover figcaption {
-            opacity: 1;
-            left: 0;
         }
         figcaption{
             text-align: center;
@@ -160,22 +151,28 @@
             color: indigo;
         }
 
-        .rest .left {
-            width: 15%;
+        .rest .body .left {
+            width: 20%;
+            background-color: rgba(0,0,0,0.0);
+            height: 100%;
             float: left;
+            margin-right: 2%;
         }
 
-        .rest .upcoming{
+        .rest .body .upcoming{
             width: 15%;
-            float: right;
             background-color: beige;
             border-radius: 5%;
             padding: 1%;
             text-align: center;
+            float: right;
         }
-        .rest .upcoming h1{
+        .rest .body .upcoming h2{
             border-bottom: 2px black solid;
             padding-bottom: 1%;
+        }
+        .rest .body .main img{
+            width: 100%;
         }
         
         
@@ -209,23 +206,21 @@
         <h5>Website Building &#8226 Graphic Design &#8226 Hosting Options &#8226 Photography</h5>
     </div>
     <div class="clear"></div>
-    <span class="body">
-        <div class="main" id="main">
-            <div class="title">
-                <h1>Welcome to Indiesign</h1>
-                <br>
-                <h3>We're glad you stopped in</h3>
-                
-                            <br><br>
-                <img src="images/main.jpg">
-                <figcaption>Runyon Canyon, Los Angeles, CA, USA | Taken by Indie</figcaption>
-            </div>
-            <span class="left"></span>
-            <span class="upcoming">
-                <h1>Upcoming Events</h1>
-            </span>
-        </div>
-    </span>
+
+    <div class="body">
+        <span class="left"></span>
+        <span class="upcoming">
+            <h2>Upcoming Events</h2>
+        </span>
+        <span class="main" id="main">
+                <span class="title">
+                    <h1>Welcome to Indiesign</h1>
+                    <h3>We're glad you stopped in</h3>
+                    <br>
+                    <img src="images/main.jpg">
+                </span>
+        </span>
+    </div>
     <div class="clear"></div>
     <br>
     <br>
